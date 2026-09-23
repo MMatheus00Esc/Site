@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Ficha RPG: AS CINZAS DE ELDRATH</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(Imagens/Imagem\ fundo\ taverna.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: "Cinzel Decorative", serif;
+        }
+        header{
+            color: #C49A3A;
+            justify-items: center;
+            background-color: transparent;
+            backdrop-filter: blur(5px);
+            width: 100%;
+            font-size: 40px;
+            margin-top: -55px;
+        }
+        main {
+
+            display: flex;
+            gap:20px
+        
+        }
+        main section{
+            flex: 1;
+            border-radius: 5px;
+            background-color: transparent;
+            color: rgb(255, 255, 255);
+            backdrop-filter: blur(5px);
+            box-shadow: 0px 4px 10px rgb(0, 0, 0,);
+            
+
+        }
+
+        section h3{
+            margin-left:15px ;
+
+
+        }
+        .transparente{
+            background-color: transparent;
+            border: none;
+            font-weight: bold;
+            color: #ffffff;
+            outline: none;
+            font-family: "Cinzel Decorative", serif;;
+            font-size: 18px;
+        }
+        .lado{
+            display: flex;
+            gap: 10px;
+        }
+        .linha{
+            border-bottom: 2px solid #ccc; 
+            padding-bottom: 15px;          
+            margin-bottom: 25px;  
+
+
+        }
+        label{
+            font-family: "Cinzel Decorative", serif;
+            font-size: 18px;
+            font-weight: bold;
+
+
+
+            }
+        select{
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            padding: 12px 15px;
+            background-color: #555a60;
+            color: #ffffff;
+            border: 2px solid #000;
+            border-radius: 8px;
+            font-size: 18px;
+            font-family: "Cinzel Decorative", serif;
+            cursor: pointer;
+            margin: 15px;
+            margin-top: -10px;
+
+        }
+        .Baixo{
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+        textarea{
+            width: 900px;
+            min-height: 200px;
+            padding: 15px;
+            font-family: "Cinzel Decorative", serif;
+            font-size: 18px;
+            line-height: 1.5;
+            background-color: transparent;
+            color: #ffffff;
+            margin-left: 15px;
+        }
+    </style>
+
+    <body>
+        <header>
+            <h1>Criação de personagem</h1>
+        </header>
+        <main>
+            <section> 
+                    <h2 class="linha" style="text-align: center;">Personagem</h2> 
+                    <label for="nome"></label>Nome do personagem:</label><input  class="transparente" type="text" id="nome" name="nome">
+                    <div class="Baixo">
+                        <label for="Raça" style="margin-top: 15px;">Raça: </label>
+                        <select name="Raça" id="raça">
+                            <option value="" disabled selected>Escolha sua raça</option>
+                            <option value="ELFO">ELFO</option>
+                            <option value="HUMANO">HUMANO</option>
+                            <option value="TROLL">TROLL</option>
+                            <option value="DOENDE">DOENDE</option>
+                            <option value="FADA">FADA</option>
+                            <option value="OGRO">OGRO</option>
+                            <option value="VAMPIRO">VAMPIRO</option>
+                            <option value="DEMONIO">DEMONIO</option>
+                            <option value="ANJO">ANJO</option>
+                        </select>
+                    </div>
+                    <div class="Baixo">
+                        <label for="Classe">classe</label>
+                        <select name="Classe" id="Classe">
+                            <option value="" disabled selected>Escolha sua Classe</option>
+                            <option value="ELFO">CLERIGO</option>
+                            <option value="HUMANO">LADRÃO</option>
+                            <option value="TROLL">GUERREIRO</option>
+                            <option value="DOENDE">CAVALEIRO</option>
+                            <option value="FADA">BARBARO</option>
+                            <option value="OGRO">CURANDEIRO</option>
+                            <option value="VAMPIRO">ALDEÃO</option>
+                            <option value="DEMONIO">NECROMANTE</option>
+                            <option value="ANJO">MAGO</option>
+                        </select>
+                    </div>
+                        <label for="nivel">Nivel:</label><input class="transparente" type="text" id="nivel" name="nivel">
+
+                    <h3>Conte a historia do seu personagem:</h3>
+                    <textarea></textarea>
+            </section>
+            <section>
+                <h2 class="linha" style="text-align: center;">Atributos</h2>
+                <div class="Baixo"
+                    <label for="forca" style="margin-top: 15px;">Força:</label><input  class="transparente" type="text" id="forca" name="forca">
+                    <label for="destreza" style="margin-top: 15px;">Destreza:</label><input  class="transparente" type="text" id="destreza" name="destreza">
+                    <label for="velocidade" style="margin-top: 15px;">Velocidade:</label><input  class="transparente" type="text" id="velocidade" name="velocidade">
+                    <label for="hp" style="margin-top: 15px;">Vida:</label><input  class="transparente" type="text" id="hp" name="hp">
+                    <label for="sagrada" style="margin-top: 15px;">Sagrada:</label><input  class="transparente" type="text" id="sagrada" name="sagrada">
+                    <label for="mana" style="margin-top: 15px;">Mana:</label><input  class="transparente" type="text" id="mana" name="mana">
+                    <label for="furt" style="margin-top: 15px;">Furtividade:</label><input  class="transparente" type="text" id="furt" name="furt">
+                </div>
+            </section>
+        </main>
+    </body>
+
+</html>
